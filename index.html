@@ -7,7 +7,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="热点简报 · 工业建筑与资源端">
 <meta property="og:title" content="窑停了，锚换了｜11月1日简报">
-<meta property="og:description" content="重庆40条熟料线92+X天错峰11月1日正式生效、川内内江+30自贡+20接力涨价、成都熟料390元全国最高。央行11月2日起隔夜逆回购固定利率1.25%、政策利率换锚。海外费半跌7.2%、纳指25437点、黄金跌破3900美元创一年低点、布油117.64美元创半年新高。6条资源端线索、8份政策、16条全景、8个共创选题。">
+<meta property="og:description" content="资源端：重庆40条熟料线92+X天错峰生效、成都熟料390元全国最高、央行隔夜逆回购1.25%换锚、布油117.64美元创半年新高。需求端：和林格尔四个智算项目同周开工152亿砸出63万平方米、乌兰察布一天签约1184亿含30栋智算楼宇、武汉52亿半导体基地开工85万平方米、小鹏首条人形机器人产线启用、低空经济地方开始用现成厂房招商。6条资源端线索、5条需求端破圈、8份政策、16条全景、8个共创选题。">
 <meta property="og:url" content="https://jryp9tmd9n-cyber.github.io/">
 <meta property="og:image" content="https://jryp9tmd9n-cyber.github.io/thumb_20261101.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -159,6 +159,9 @@ h1 span{display:inline-block;opacity:0;transform:translateY(14px);animation:word
 .caut{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:11.5px;line-height:1.7;color:var(--tx3)}
 .caut b{color:var(--a3);font-weight:700}
 
+.dm-sig{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.68;color:var(--tx2)}
+.dm-sig b{color:var(--a4);font-weight:700}
+
 .tl{position:relative;padding-left:22px}
 .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--a1),var(--a2),transparent)}
 .ti{position:relative;padding:0 0 18px}
@@ -271,6 +274,7 @@ h1 span{display:inline-block;opacity:0;transform:translateY(14px);animation:word
   <nav class="jump" id="jump">
     <a href="#ml" class="on">主线</a>
     <a href="#ct">资源端</a>
+    <a href="#dm">需求端</a>
     <a href="#pl">政策</a>
     <a href="#pn">全景</a>
     <a href="#cc">共创</a>
@@ -290,6 +294,13 @@ h1 span{display:inline-block;opacity:0;transform:translateY(14px);animation:word
     <h2>从矿山到厂房</h2>
     <p class="sub">铁 → 煤与水泥 → 砂石 → 电力 → 石化 → 厂房本体。点卡片展开事实、四个角度与共创输出点。</p>
     <div id="cards"></div>
+  </section>
+
+  <section class="sec" id="dm">
+    <div class="eyebrow">Demand Side</div>
+    <h2>需求端风向：谁在扩产</h2>
+    <p class="sub" id="dmNote"></p>
+    <div id="dmlist"></div>
   </section>
 
   <section class="sec" id="pl">
@@ -616,6 +627,52 @@ window.HOTSPOT_DATA = {
     }
   ],
 
+  demand: {
+    note: "需求端风向 · 给业主客户的破圈资讯：不算钢价煤价，只看谁在扩产、谁在建、钱从哪来。每条最后落到一句「业主信号」——它对厂房、洁净室、机房、仓储意味着什么。",
+    items: [
+      {
+        id: "D1",
+        tag: "算力 · 开工端",
+        heat: 5,
+        title: "和林格尔四项目同周开工：152 亿砸出 63 万平方米",
+        desc: "**10 月 28 日—31 日**，国家「东数西算」内蒙古枢纽落地关键一子：万国数据（51 亿、18.4 万㎡）、中金零碳算力基地（49 亿、21.52 万㎡、自建 **220KV 变电站**）、云港智能（40 亿、16 万㎡、液冷）、光环新网（12.35 亿、9.86 万㎡）四个头部智算项目在和林格尔新区相继开工——总投资 **152.35 亿元**，占地约 706 亩，规划建筑面积逾 **63 万平方米**。呼和浩特全市算力中心已集聚 64 个、总规模 16.5 万 P，智能算力占比超 97%。",
+        signal: "63 万㎡不是一栋楼，是一整套工业建筑包：机房楼、动力楼、变电站、柴发楼缺一不可。这一批项目的总包、钢结构、机电配套归谁，就是算力基建红利的第一次分配——跟踪中标公告比看新闻稿有用。"
+      },
+      {
+        id: "D2",
+        tag: "算力 · 签约端",
+        heat: 4.5,
+        title: "乌兰察布一天签下 1184 亿，其中 30 栋是楼",
+        desc: "近日乌兰察布集宁区集中签约 6 个算力项目、总投资 **1184 亿元**：世纪互联 360 亿（2000MW）、中联云港 290 亿（1500MW、**配套 30 栋高标准智算中心楼宇**）、秦淮数据 230 亿（1GW）、普洛斯 204.9 亿（1300MW）、华一云联 100 亿（500MW、含机房楼与变电站）、明阳电气三期（**非标预制化电力模组舱**制造）。签约是意向，从签约到开工的转化率才是真需求。",
+        signal: "「30 栋楼宇」是这单签约里最像订单的四个字——智算中心本质是带变配电的特种厂房。而明阳电气的预制化电力模组舱，说明算力配套本身就在走装配式路线：谁能把电力舱、机房楼做成标准产品，谁就吃这条链。"
+      },
+      {
+        id: "D3",
+        tag: "制造业 · 半导体",
+        heat: 4.5,
+        title: "武汉半导体扎堆：52 亿基地开工，85 万平方米在排队",
+        desc: "**10 月 28 日**邦芯半导体华中基地在武汉投产（年产 100 台半导体设备、预计年产值 6 亿）；同月，湖北九峰山半导体制造基地开工——总投资 **52 亿元**，规划总建筑面积约 **85 万㎡**，含超净厂房、动力站房、仓储物流中心，2029 年 10 月竣工，达产后年产 12 英寸晶圆 24 万片。2026 年以来中微公司、中科飞测、臻宝科技等集成电路龙头先后签约落户武汉，装备产业正从单点项目转向集群化。",
+        signal: "半导体项目的造价大头不在壳子：设备投资占比约 65%，但超净厂房与动力站房（纯水、特气、变配电）是设备进场的先决条件——土建包永远被设备招标节点倒排工期。谁能在洁净室工程上做出交付确定性，谁就拿到下一批晶圆厂门票。"
+      },
+      {
+        id: "D4",
+        tag: "泛科技 · 机器人",
+        heat: 4,
+        title: "机器人进厂的第一年：10 万台产能需要多少厂房",
+        desc: "**10 月**，小鹏广州人形机器人自动化产线启用——全球首条，量产基地占地约 **11 万㎡**，覆盖总装、零部件、测试、仓储全链条，年底月产能冲 1000 台。行业面：2026 上半年全球人形机器人出货 1.91 万台、中国厂商占 **97%**，工信部预期全年整机产量破 **10 万台**；智元上海临港、张江、成都、无锡四基地接连投产，优必选柳州工厂 9 月投产、规划万台级。工信部「万台级规模落地」专项行动年底到期。",
+        signal: "机器人工厂是一套标准工业建筑组合：洁净总装车间＋测试区＋立体仓储。更实际的信号是零部件 85% 与汽车供应链重合——意味着需求大概率长在**现有汽车厂房的改造与扩建**里，而不是从零新建。手里有汽车产业园区资源的业主，这是今年最具体的招商线索。"
+      },
+      {
+        id: "D5",
+        tag: "政策 · 产业规划",
+        heat: 3.5,
+        title: "低空经济从概念进清单：地方开始用厂房招商",
+        desc: "十部门发布低空经济标准体系建设指南（2027 年基本建立、2030 年超 **300 项**）；地方同步项目化：东莞石排规划 **15 万㎡** 低空经济产业园、山东无棣低空装备制造产业园总投资 10 亿分三期（首项目已投产）、广州设 200 亿空天产业基金、河南 20 亿低空基金。最直接的信号是**安阳发改委公开向全国低空企业发落地邀约**——储备大面积高标准厂房、配套人才公寓，房租减免加专项补贴。",
+        signal: "地方政府已经在用「现成高标准厂房＋免租」当招商筹码——这意味着标准厂房正从资产变成耗材：空置厂房的租金定价权会持续走弱，而带资质门槛的特种厂房（试飞场、检测线、防爆仓储）才是能留下租客的品种。持有园区资产的业主值得重读一遍手里的租约结构。"
+      }
+    ]
+  },
+
   policy: [
     { no: "01", org: "中国人民银行", name: "公开市场操作改革：政策利率换锚", core: "11 月 2 日起每个工作日开展隔夜逆回购操作招标、固定利率 1.25%；7 天期逆回购改为固定数量、利率招标、多重价位中标（税期、月末开展）；临时正/逆回购等工具均改在隔夜利率基础上加减点——隔夜利率成为全市场短端资金的唯一定价锚，厂房项目融资的定价基准随之切换", time: "11 月 2 日执行", tag: "货币政策" },
     { no: "02", org: "国家发改委等五部门", name: "《关于加强消费基础设施建设 促进消费投资良性互动的指导意见》", core: "五方面 20 项任务；明确推动老旧厂区功能转换、建设首店集聚区与特色美食街区；鼓励利用工业厂房打造体育运动空间；支持商业综合体更新空调电梯冷藏安防设备；新建改扩建停车场按标准配建充电设施；健全县乡村三级物流配送网络", time: "10 月 30 日", tag: "存量改造" },
@@ -804,6 +861,18 @@ window.HOTSPOT_DATA = {
     if(c0) c0.classList.add('open');
   }, 900);
 
+  if(D.demand){
+    $('#dmNote').textContent = D.demand.note || '';
+    $('#dmlist').innerHTML = (D.demand.items||[]).map(function(x){
+      return '<article class="ml rv">'
+        + '<div class="k">'+esc(x.id)+' · '+esc(x.tag)+'</div>'
+        + '<h3>'+esc(x.title)+'</h3>'
+        + '<p>'+fmt(x.desc)+'</p>'
+        + '<div class="dm-sig"><b>业主信号</b>　'+fmt(x.signal)+'</div>'
+        + '</article>';
+    }).join('');
+  }
+
   document.addEventListener('click', function(e){
     var ch = e.target.closest ? e.target.closest('.ch') : null;
     if(!ch) return;
@@ -943,7 +1012,7 @@ window.HOTSPOT_DATA = {
   }
 
   var bar = $('#bar'), tb = $('#topbar'), fab = $('#fab');
-  var ids = ['ml','ct','pl','pn','cc','fn','tk','fr'];
+  var ids = ['ml','ct','dm','pl','pn','cc','fn','tk','fr'];
   var links = [].slice.call(document.querySelectorAll('#jump a'));
   function onScroll(){
     var h = document.documentElement;
